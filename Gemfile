@@ -28,6 +28,7 @@ gem "paperclip", "~> 4.3"
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'devise-bootstrap-views'
+gem 'kaminari', '~> 0.16.3'  
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

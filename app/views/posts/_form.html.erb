@@ -1,0 +1,24 @@
+<div class="form-wrapper">
+  <div class="image-wrap">
+    <%= form_image_select(@post) %>
+    <%= form_for @post, html: { class: 'form-horizontal', multipart: true } do |f| %>
+      <div class="container-fluid">
+        <div class="form-group text-center">
+          <h4>Add Image</h4>
+              <%= f.file_field :image, label: false, :onchange => "loadFile(event)"%>
+        </div>
+        <div class="form-group text-center">
+        <label>Add Caption</label>
+          <%= f.text_field :caption, class: 'form-control', placeholder: "Text caption" %>
+        </div>
+        <div class="form-group text-center">
+        <label>Add Article</label>
+          <%= f.text_area :article, class: 'form-control', rows: "6", placeholder: "Text article" %>
+        </div>
+        <div class="form-group text-center">
+          <%= f.submit :submit, class: 'btn btn-primary btn-lg btn-block' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
