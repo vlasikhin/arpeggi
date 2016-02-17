@@ -23,6 +23,16 @@
 html {  
   height: 100%;
 }
+
+.comments {
+  .paginator {
+    margin: 0.5em;
+    .more-comments {
+      color: #A5A7AA;
+    }
+  }
+}
+
 #paginator {
   color: #AFCFED;
   height: 60px;
@@ -166,6 +176,8 @@ html {
  }
 
  .post-bottom {
+    margin-top: 10px;
+ 
    .user-name, .comment-content {
      display: inline;
    }
